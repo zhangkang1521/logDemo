@@ -15,7 +15,12 @@ public class App {
         logger.debug("debug");
         logger.info("info");
         logger.warn("warn");
-        logger.error("error");
+        try {
+            int i = 0;
+            int b = 5/i;
+        }catch (Exception e) {
+            logger.error("error happened:", e);
+        }
     }
 
 }
