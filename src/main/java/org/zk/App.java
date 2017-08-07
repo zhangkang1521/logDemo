@@ -10,12 +10,15 @@ public class App {
 
     private static final Logger logger = LoggerFactory.getLogger(App.class);
 
-    public static void main(String[] args) {
-        logger.trace("trace");
-        logger.debug("debug");
-        logger.info("info");
-        logger.warn("warn");
-        logger.error("error");
+    public static void main(String[] args) throws Exception{
+        while(true) {
+            logger.trace("trace");
+            logger.debug("debug");
+            logger.info("info");
+            logger.warn("warn");
+            logger.error("error");
+            Thread.sleep(5000);
+        }
     }
 
 }
